@@ -1,93 +1,93 @@
 # Firefox Bookmark Organizer
 
-Firefox yer imlerinizi (bookmarks) otomatik olarak yedekleyen ve içeriklerine göre yeniden organize eden bir tarayıcı eklentisi.
+A Firefox browser extension that automatically backs up your bookmarks and reorganizes them based on their content analysis.
 
-## Özellikler
+## Features
 
-- Mevcut yer imlerini JSON formatında yedekleme
-- Her yer iminin içeriğini otomatik analiz etme
-- İçerik analizine göre yer imlerini kategorilere ayırma
-- Orijinal yapı ile yeni organizasyon arasındaki farkları raporlama
-- Tüm işlem sonuçlarını detaylı raporlama
+- Backup existing bookmarks in JSON format
+- Automatic content analysis of each bookmark
+- Categorize bookmarks based on content analysis
+- Compare and report differences between original and new organization
+- Detailed reporting of all operations
 
-## Kurulum
+## Installation
 
-1. Firefox tarayıcınızda `about:debugging` sayfasını açın
-2. "This Firefox" sekmesine tıklayın
-3. "Load Temporary Add-on" butonuna tıklayın
-4. Projedeki `manifest.json` dosyasını seçin
+1. Open `about:debugging` in your Firefox browser
+2. Click on "This Firefox" tab
+3. Click "Load Temporary Add-on"
+4. Select the `manifest.json` file from the project
 
-## Kullanım
+## Usage
 
-1. Eklenti yüklendikten sonra Firefox araç çubuğunda görünecektir
-2. Eklenti ikonuna tıklayın
-3. "Bookmarkları Yedekle ve Düzenle" butonuna tıklayın
-4. İşlem tamamlandığında:
-   - Orijinal yer imleri `bookmarks-backup-[tarih].json` dosyasına kaydedilir
-   - Yeni organizasyon raporu `bookmarks-report-[tarih].json` dosyasına kaydedilir
+1. After installation, the extension will appear in the Firefox toolbar
+2. Click on the extension icon
+3. Click "Backup and Organize Bookmarks" button
+4. When the process completes:
+   - Original bookmarks are saved to `bookmarks-backup-[date].json`
+   - New organization report is saved to `bookmarks-report-[date].json`
 
-## Teknik Detaylar
+## Technical Details
 
-### Proje Yapısı
+### Project Structure
 
 ```
 firebookmark/
-├── manifest.json        # Eklenti manifest dosyası
-├── popup.html          # Eklenti arayüzü
-├── popup.js           # Arayüz etkileşimleri
-└── background.js      # Ana işlem mantığı
+├── manifest.json        # Extension manifest file
+├── popup.html          # Extension UI
+├── popup.js           # UI interactions
+└── background.js      # Core processing logic
 ```
 
-### Kullanılan Teknolojiler
+### Technologies Used
 
 - Firefox WebExtensions API
 - JavaScript (ES6+)
 - HTML/CSS
 
-### Kategori Sistemi
+### Category System
 
-Varsayılan kategoriler:
-- Teknoloji
-- Haber
-- Eğlence
-- Diğer
+Default categories:
+- Technology
+- News
+- Entertainment
+- Other
 
-## Geliştirme
+## Development
 
-### Gereksinimler
+### Requirements
 
 - Firefox Browser
-- Temel web geliştirme bilgisi
+- Basic web development knowledge
 
-### Yerel Geliştirme
+### Local Development
 
-1. Projeyi klonlayın:
+1. Clone the project:
 ```bash
-git clone https://github.com/[kullanıcı-adı]/firebookmark.git
+git clone https://github.com/[username]/firebookmark.git
 cd firebookmark
 ```
 
-2. Firefox'ta geliştirici modunda test edin:
-   - `about:debugging` sayfasını açın
-   - "This Firefox" > "Load Temporary Add-on"
-   - `manifest.json` dosyasını seçin
+2. Test in Firefox Developer Mode:
+   - Open `about:debugging`
+   - Go to "This Firefox" > "Load Temporary Add-on"
+   - Select the `manifest.json` file
 
-## Katkıda Bulunma
+## Contributing
 
-1. Bu repository'yi fork edin
-2. Feature branch'i oluşturun (`git checkout -b feature/AmazingFeature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some AmazingFeature'`)
-4. Branch'inizi push edin (`git push origin feature/AmazingFeature`)
-5. Pull Request oluşturun
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Lisans
+## License
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
+This project is licensed under the MIT License - see the `LICENSE` file for details.
 
-## İletişim
+## Contact
 
-[İletişim bilgileriniz]
+[Your contact information]
 
-## Teşekkürler
+## Acknowledgments
 
-Bu projeye katkıda bulunan herkese teşekkürler! 
+Thanks to everyone who has contributed to this project! 

@@ -1,15 +1,15 @@
 document.getElementById('backupBtn').addEventListener('click', async () => {
   const statusDiv = document.getElementById('status');
-  statusDiv.textContent = 'İşlem başlatıldı...';
+  statusDiv.textContent = 'Process started...';
   
   try {
     const result = await browser.runtime.sendMessage({action: "startProcess"});
     if (result.success) {
-      statusDiv.textContent = 'İşlem başarıyla tamamlandı!';
+      statusDiv.textContent = 'Process completed successfully!';
     } else {
-      statusDiv.textContent = 'Hata oluştu: ' + result.error;
+      statusDiv.textContent = 'Error occurred: ' + result.error;
     }
   } catch (error) {
-    statusDiv.textContent = 'Hata oluştu: ' + error.message;
+    statusDiv.textContent = 'Error occurred: ' + error.message;
   }
 }); 
